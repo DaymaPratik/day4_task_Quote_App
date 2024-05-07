@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+}
+
+.footer-box {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 60vh;
+    margin-top: 100px;
+    background: rgb(240 240 240 / 55%);
+    border: 1px solid #e5e7eb;
+    width: 100%;
+    color: rgb(75 85 99);
+    font-family: "Kanit", sans-serif;
+    box-shadow: 0px 0px 5px 1px black;
+}
+
+.footer-heading {
+    /* border: 2px solid red; */
+    padding: 10px;
+    color: rgb(13 148 136);
+}
+
+.footer-para {
+    /* border: 2px solid yellow; */
+    padding: 10px;
+    min-width: 450px;
+    width: 40%;
+}
+
+.footer-list {
+    list-style: none;
+    /* border: 2px solid rgb(0, 21, 255); */
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 450px;
+    width: 45%;
+    flex-wrap: wrap;
+}
+.footer-list li{
+    transition: 0.1s ease-in;
+ }
+.footer-list li:hover{
+   color: rgb(125, 125, 125);
+   cursor: pointer;
+}
+
+.footer-icons-box {
+    /* border: 2px solid rgb(0, 255, 68); */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    flex-wrap: wrap;
+}
+.footer-icons-box img{
+transition: 0.1s ease-in;
+}
+.footer-icons-box img:hover{
+    scale: 110%;
+    cursor: pointer;
+}
+
+@media screen and (max-width:500px) {
+    .footer-list {
+        width: 90%;
+        min-width: 170px;
+    }
+
+    .footer-list li {
+        margin: 5px;
+    }
+
+    .footer-para {
+        min-width: 170px;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .footer-box {
+       height: fit-content;
+       padding: 10px 0px;
+    }
+
+
+    .footer-icons-box {
+        width: 90%;
+       min-width: 150px;
+       flex-wrap: wrap;
+       height: fit-content;
+       padding: 20px 10px;
+    }
+    .footer-icons-box img{
+        margin: 7px;
+    }
+
+    .footer-list {
+        width: 95%;
+        min-width: 140px;
+    }
+
+    .footer-para {
+        min-width: 140px;
+        width: 95%;
+    }
+}

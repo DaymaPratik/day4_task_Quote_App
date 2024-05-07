@@ -1,0 +1,18 @@
+.main-box{
+    position: relative;
+    top: 10vh;
+    /* border: 2px solid black; */
+    margin: 25px auto;
+    width: 70%;
+}
+
+@media screen and (max-width:1024px) {
+    .main-box{
+        width: 80%;
+    }
+}
+@media screen and (max-width:768px) {
+    .main-box{
+        width: 90%;
+    }
+}

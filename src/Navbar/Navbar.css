@@ -1,0 +1,119 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    width: 100%;
+   background: white;
+    height: 10vh;
+    justify-content: space-evenly;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    font-family: "Kanit", sans-serif;
+    box-shadow: 0px 0px 5px 1px black;
+}
+.logo-name-box{
+    display:flex;
+    /* border: 2px solid red; */
+    width: 250px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.logo-name-box h2{
+    font-size: 30px;
+}
+.nav-list-box{
+    /* border: 2px solid green; */
+    width: 50%;
+    align-content: center;
+}
+.nav-list{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    /* border: 2px solid blue; */
+    font-size: 18px;
+    width:100%;
+    font-weight: 600;
+}
+.nav-list li{
+    /* border: 2px solid purple; */
+    padding: 5px;
+}
+.nav-list li:hover{
+   color: rgb(29 78 216);
+}
+.nav-btn-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.nav-btn-box button{
+    background: rgb(29 78 216);
+    color: white;
+    padding: 8px;
+    font-size: 15px;
+    border-radius: 7px;
+    border: none;
+    transition: 0.1s ease-in;
+}
+.nav-btn-box button:hover{
+    filter: brightness(85%);
+    cursor: pointer;
+}
+.hamburger{
+    height: 60%;
+}
+
+
+@media screen and (min-width:768px) {
+    .hamburger{
+        display: none;
+        height: 60%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .navbar{
+        justify-content: space-between;
+        padding: 0px 25px;
+
+    }
+    .nav-list-box{
+        display: none;
+    }
+    .nav-btn-box{
+       width: 40%;
+    }
+}
+@media screen and (max-width:500px) {
+    .logo-name-box{
+        width: 200px;
+    }
+    .logo-name-box h1{
+        font-size: 25px;
+    }
+    .nav-btn-box{
+        width: 50%;
+     }
+     .hamburger{
+        height: 50%;
+    }
+}
+@media screen and (max-width:410px) {
+    .navbar{
+       padding: 0px 15px;
+    }
+    .nav-btn-box{
+        width: 60%;
+     }
+    .logo-name-box{
+        width: 100px;
+    }
+    .logo-name-box h2{
+        display: none;
+    }
+}
